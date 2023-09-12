@@ -88,6 +88,8 @@ const Chatbox = ({ changeUserList }) => {
       if (response.ok) {
         const data = await response.json();
         setMessage(""); // Clear the input field
+        const messagesContainer = document.querySelector(".chatbox .messages");
+        messagesContainer.scrollIntoView({ behavior: "smooth" });
       } else {
         console.error("Failed to post message");
       }

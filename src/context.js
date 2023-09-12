@@ -1,7 +1,7 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
 
-export const URI = "https://gentle-outfit-ant.cyclic.cloud/";
+export const URI = "http://localhost:4000/";
 export const LOCAL_STORAGE_KEY = "chatapp";
 
 export const Context = createContext({
